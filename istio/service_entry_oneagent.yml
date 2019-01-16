@@ -6,13 +6,13 @@ metadata:
 spec:
   hosts:
   - ksn13121.live.dynatrace.com
-  - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com/communication
+  - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com
   location: MESH_EXTERNAL
   ports:
   - number: 443
@@ -27,81 +27,81 @@ metadata:
 spec:
   hosts:
   - ksn13121.live.dynatrace.com
-  - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com/communication
-  - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com/communication
+  - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com
+  - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com
   tls:
  - match:
    - port: 443
      sni_hosts:
-     - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com/communication
+     - sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com
    route:
    - destination:
-       host: sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com/communication
+       host: sg-us-east-1-52-44-41-62-prod11-virginia.live.ruxit.com
        port:
          number: 443
          name: HTTPS
  - match:
    - port: 443
      sni_hosts:
-     - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com/communication
+     - sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com
    route:
    - destination:
-       host: sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com/communication
+       host: sg-us-east-1-35-171-67-40-prod11-virginia.live.ruxit.com
        port:
          number: 443
          name: HTTPS
 - match:
   - port: 443
     sni_hosts:
-    - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com/communication
+    - sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com
   route:
   - destination:
-      host: sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com/communication
+      host: sg-us-east-1-35-171-41-150-prod11-virginia.live.ruxit.com
       port:
         number: 443
         name: HTTPS
 - match:
   - port: 443
     sni_hosts:
-    - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com/communication
+    - sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com
   route:
   - destination:
-      host: sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com/communication
+      host: sg-us-east-1-34-224-191-253-prod11-virginia.live.ruxit.com
       port:
         number: 443
         name: HTTPS
 - match:
   - port: 443
     sni_hosts:
-    - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com/communication
+    - sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com
   route:
   - destination:
-      host: sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com/communication
+      host: sg-us-east-1-54-173-16-194-prod11-virginia.live.ruxit.com
       port:
         number: 443
         name: HTTPS
 - match:
   - port: 443
     sni_hosts:
-    - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com/communication
+    - sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com
   route:
   - destination:
-      host: sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com/communication
+      host: sg-us-east-1-34-195-115-124-prod11-virginia.live.ruxit.com
       port:
         number: 443
         name: HTTPS
 - match:
   - port: 443
     sni_hosts:
-    - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com/communication
+    - sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com
   route:
   - destination:
-      host: sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com/communication
+      host: sg-us-east-1-34-234-129-125-prod11-virginia.live.ruxit.com
       port:
         number: 443
         name: HTTPS
